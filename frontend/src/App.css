@@ -1,0 +1,80 @@
+/* Global styles for superheroes components */
+
+/* General container styling */
+.superhero-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling for AddSuperhero form */
+.add-superhero-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-superhero-form input,
+.add-superhero-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.add-superhero-form input:focus,
+.add-superhero-form select:focus {
+  border-color: #007bff;
+}
+
+.add-superhero-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-superhero-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Superhero list styling */
+.superhero-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.superhero-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.superhero-card:hover {
+  transform: translateY(-5px);
+}
+
+.superhero-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.superhero-card p {
+  font-size: 14px;
+  color: #666;
+}
