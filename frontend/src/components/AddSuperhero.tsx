@@ -5,7 +5,7 @@ import "../styles/superheroes.css";
 const AddSuperhero = ({
   editingHero,
   onEditComplete,
-  onSuperheroUpdated, // 🔹 Adăugăm această prop pentru a actualiza lista
+  onSuperheroUpdated,
 }: {
   editingHero: any;
   onEditComplete: () => void;
@@ -34,7 +34,7 @@ const AddSuperhero = ({
         })
         .then(() => {
           onEditComplete();
-          onSuperheroUpdated(); // 🔹 Apelează funcția de actualizare a listei după editare
+          onSuperheroUpdated();
           resetForm();
         })
         .catch((error) => console.error("Error updating superhero:", error));
@@ -48,7 +48,7 @@ const AddSuperhero = ({
         .then(() => {
           resetForm();
           onEditComplete();
-          onSuperheroUpdated(); // 🔹 Apelează funcția și după adăugare
+          onSuperheroUpdated();
         })
         .catch((error) => console.error("Error adding superhero:", error));
     }
